@@ -1,0 +1,4 @@
+Smells encontrados
+1)
+6.2.1 Misplaced method
+El agregateA de movimiento, podría estar directamente en cuenta
