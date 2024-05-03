@@ -28,6 +28,11 @@ public class MonederoTest {
   }
 
   @Test
+  void PonerMontoCero() {
+    assertThrows(MontoNegativoException.class, () -> cuenta.poner(0));
+  }
+
+  @Test
   void TresDepositos() {
     cuenta.poner(1500);
     cuenta.poner(456);
@@ -43,6 +48,8 @@ public class MonederoTest {
           cuenta.poner(245);
     });
   }
+
+
 
   @Test
   void ExtraerMasQueElSaldo() {
